@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
 
+<head>
+<style>
+.heading {
+text-align: center
+}
+body {background-color: aqua;}
+</style>
+<script>
+function Exercise() {
+  alert('Going to exercise');
+}
+
+function Exercise() {
+  location.href = "Exercisepage.html";
+}
+
+function planYourDiet() {
+  location.href = "planYourDiet.html";
+}
+
+</script>
 </head>
 <body>
 
-<h1>Healthy Living</h1>
+<h1 class="heading">Healthy Living</h1>
 <p>Welcome to Healthy living we have two pages on this page where you can check out some healthy tips for improving your health.</p>
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Soldier_running_in_water.jpg/160px-Soldier_running_in_water.jpg" alt="Exercise">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/MARIANA_DE_MELO.JPG/187px-MARIANA_DE_MELO.JPG" alt="Exercise">
-<br/>
-
-<button onclick="document.location='planyourdiet.html'">Healthy Living</button>
-
-<button onclick="document.location='Exercisepage.html'">Exercise</button>
-
 </body>
-
 </html>
+<h2> Worried about your health?</h2>
+<p> Don't worry, in this website you can learn all about how to plan you diet, tips that can help you, and more. </p>
+<p>
+<button id="btnClickExercise" type="button" onclick="Exercise()"> Exercise </button> 
+<button id="btnClickPlanYourDiet" type="button" onclick="planYourDiet()">Plan your diet</button> </p>
